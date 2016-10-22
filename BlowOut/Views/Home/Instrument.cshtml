@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Instrument";
+}
+
+<h2>@ViewBag.Instrument Rentals</h2>
+
+<div class="fullsize" style="text-align: center">
+    <img src="@ViewBag.Img" />
+</div>
+
+
+<div class="container">
+    <ul class="nav nav-pills nav-justified">
+        <li class="active tabtext"><a data-toggle="tab" href="#new">New</a></li>
+        <li class="tabtext"><a data-toggle="tab" href="#used">Used</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="new" class="tab-pane fade in active">
+            <br />
+            <div class="alert alert-info alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <strong>Remember!</strong> Once you have owned the instrument for 18 months, you own the instrument. If you return it at any time before 3 months there will be a $200 re-stocking fee. If you return it after 3 months you forfeit any equity in the instrument.
+            </div>
+            <p><span class="money">@ViewBag.New</span> per month</p>
+        </div>
+        <div id="used" class="tab-pane fade">
+            <br />
+            <div class="alert alert-info alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <strong>Remember!</strong> Once you have owned the instrument for 18 months, you own the instrument. If you return it at any time before 3 months there will be a $200 re-stocking fee. If you return it after 3 months you forfeit any equity in the instrument.
+            </div>
+            <p><span class="money">@ViewBag.Used</span> per month</p>
+        </div>
+    </div>
+</div>

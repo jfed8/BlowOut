@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Rentals";
+}
+
+<h2>Online Rentals</h2>
+
+<div class="alert alert-info alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <strong>Remember!</strong> Once you have owned the instrument for 18 months, you own the instrument. If you return it at any time before 3 months there will be a $200 re-stocking fee. If you return it after 3 months you forfeit any equity in the instrument.
+</div>
+
+<div class="fullsize">
+    <table border="0">
+        <tr>
+            <td>
+                @Html.ActionLink("Trumpet", "Instrument", "Home", new { inst = "Trumpet" }, new { @class = "trumpet" })
+            </td>
+            <td>
+                @Html.ActionLink("French Horn", "Instrument", "Home", new { inst = "French Horn" }, new { @class = "frenchhorn" })
+            </td>
+            <td>
+                @Html.ActionLink("Trombone", "Instrument", "Home", new { inst = "Trombone" }, new { @class = "trombone" })
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.ActionLink("Flute", "Instrument", "Home", new { inst = "Flute" }, new { @class = "flute" })
+            </td>
+            <td>
+                @Html.ActionLink("Clarinet" , "Instrument", "Home", new { inst = "Clarinet" }, new { @class = "clarinet" })
+            </td>
+            <td>
+                @Html.ActionLink("Saxophone", "Instrument", "Home", new { inst = "Saxophone" }, new { @class = "saxophone" })
+            </td>
+        </tr>
+    </table>
+</div>
+
