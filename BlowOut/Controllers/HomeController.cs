@@ -75,6 +75,11 @@ namespace BlowOut.Controllers
                             
             }
 
+            if (inst == null)
+            {
+                return RedirectToAction("Rentals");
+            }
+
             return View();
         }
     }
